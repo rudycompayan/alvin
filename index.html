@@ -1,0 +1,421 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Raffle Draw</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2.0">
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="dist/jquery.slotmachine.css" type="text/css" media="screen" />
+
+		<script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="dist/jquery.slotmachine.js"></script>
+		<style type="text/css">
+			h1 {
+				opacity: 0;
+				animation: blinking 1s linear infinite;
+			}
+
+			@keyframes blinking {
+				from,
+				49.9% {
+					opacity: 0;
+				}
+				50%,
+				to {
+					opacity: 1;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="header-line"></div>
+
+		<!-- Badge -->
+		<a href="https://github.com/josex2r/jQuery-SlotMachine"><img style="position: absolute; top: 0; right: 0; border: 0;" src="img/ligon.png" alt="Rudy the great!" data-canonical-src="img/ligon.png"></a>
+
+
+		<!-- Intro -->
+		<header style="text-align: center; padding: 0px; margin: 0px">
+			<table align="center">
+				<td>
+					<td align="center"><img src="img/logo68.png" width="250px"></td>
+					<td align="center" style="font-size: 48px; text-transform:uppercase; font-weight: bold">Anniversary <br> Culminating <br>Program</td>
+				</tr>
+			</table>
+		</header>
+
+
+		<!-- Flight example -->
+		<div id="randomize">
+			<div class="content container" style="text-align: center;max-width: 90%;">
+				<h1 style="text-decoration: blink">Check your ticket number!</h1>
+
+				<div class="row">
+					<div class="col-xs-1"  style="margin-left: 320px;">
+						<div>
+							<div id="machine1" class="randomizeMachine" style="border-radius: 22px 0 0 22px;">
+								<div><img src="img/slot1.png" /></div>
+								<div><img src="img/slot2.png" /></div>
+								<div><img src="img/slot3.png" /></div>
+								<div><img src="img/slot4.png" /></div>
+								<div><img src="img/slot5.png" /></div>
+								<div><img src="img/slot6.png" /></div>
+								<div><img src="img/slot7.png" /></div>
+								<div><img src="img/slot8.png" /></div>
+								<div><img src="img/slot9.png" /></div>
+								<div><img src="img/slot10.png" /></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-1">
+						<div>
+							<div id="machine2" class="randomizeMachine">
+								<div><img src="img/slot1.png" /></div>
+								<div><img src="img/slot2.png" /></div>
+								<div><img src="img/slot3.png" /></div>
+								<div><img src="img/slot4.png" /></div>
+								<div><img src="img/slot5.png" /></div>
+								<div><img src="img/slot6.png" /></div>
+								<div><img src="img/slot7.png" /></div>
+								<div><img src="img/slot8.png" /></div>
+								<div><img src="img/slot9.png" /></div>
+								<div><img src="img/slot10.png" /></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-1">
+						<div>
+							<div id="machine3" class="randomizeMachine">
+								<div><img src="img/slot1.png" /></div>
+								<div><img src="img/slot2.png" /></div>
+								<div><img src="img/slot3.png" /></div>
+								<div><img src="img/slot4.png" /></div>
+								<div><img src="img/slot5.png" /></div>
+								<div><img src="img/slot6.png" /></div>
+								<div><img src="img/slot7.png" /></div>
+								<div><img src="img/slot8.png" /></div>
+								<div><img src="img/slot9.png" /></div>
+								<div><img src="img/slot10.png" /></div>
+							</div>
+						</div>
+					</div>
+				
+					<div class="col-xs-1">
+						<div>
+							<div id="machine4" class="randomizeMachine">
+								<div><img src="img/slot1.png" /></div>
+								<div><img src="img/slot2.png" /></div>
+								<div><img src="img/slot3.png" /></div>
+								<div><img src="img/slot4.png" /></div>
+								<div><img src="img/slot5.png" /></div>
+								<div><img src="img/slot6.png" /></div>
+								<div><img src="img/slot7.png" /></div>
+								<div><img src="img/slot8.png" /></div>
+								<div><img src="img/slot9.png" /></div>
+								<div><img src="img/slot10.png" /></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-1">
+						<div>
+							<div id="machine5" class="randomizeMachine" style="border-radius: 0px 22px 22px 0px;">
+								<div><img src="img/slot1.png" /></div>
+								<div><img src="img/slot2.png" /></div>
+								<div><img src="img/slot3.png" /></div>
+								<div><img src="img/slot4.png" /></div>
+								<div><img src="img/slot5.png" /></div>
+								<div><img src="img/slot6.png" /></div>
+								<div><img src="img/slot7.png" /></div>
+								<div><img src="img/slot8.png" /></div>
+								<div><img src="img/slot9.png" /></div>
+								<div><img src="img/slot10.png" /></div>
+							</div>
+						</div>
+					</div>
+
+					<!--<div class="col-xs-1">
+						<div>
+							<div id="machine6" class="randomizeMachine">
+								<div><img src="img/slot1.png" /></div>
+								<div><img src="img/slot2.png" /></div>
+								<div><img src="img/slot3.png" /></div>
+								<div><img src="img/slot4.png" /></div>
+								<div><img src="img/slot5.png" /></div>
+								<div><img src="img/slot6.png" /></div>
+								<div><img src="img/slot7.png" /></div>
+								<div><img src="img/slot8.png" /></div>
+								<div><img src="img/slot9.png" /></div>
+								<div><img src="img/slot10.png" /></div>
+							</div>
+						</div>
+					</div>
+				
+					<div class="col-xs-1">
+						<div>
+							<div id="machine7" class="randomizeMachine">
+								<div><img src="img/slot1.png" /></div>
+								<div><img src="img/slot2.png" /></div>
+								<div><img src="img/slot3.png" /></div>
+								<div><img src="img/slot4.png" /></div>
+								<div><img src="img/slot5.png" /></div>
+								<div><img src="img/slot6.png" /></div>
+								<div><img src="img/slot7.png" /></div>
+								<div><img src="img/slot8.png" /></div>
+								<div><img src="img/slot9.png" /></div>
+								<div><img src="img/slot10.png" /></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-1">
+						<div>
+							<div id="machine8" class="randomizeMachine">
+								<div><img src="img/slot1.png" /></div>
+								<div><img src="img/slot2.png" /></div>
+								<div><img src="img/slot3.png" /></div>
+								<div><img src="img/slot4.png" /></div>
+								<div><img src="img/slot5.png" /></div>
+								<div><img src="img/slot6.png" /></div>
+								<div><img src="img/slot7.png" /></div>
+								<div><img src="img/slot8.png" /></div>
+								<div><img src="img/slot9.png" /></div>
+								<div><img src="img/slot10.png" /></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-1">
+						<div>
+							<div id="machine9" class="randomizeMachine">
+								<div><img src="img/slot1.png" /></div>
+								<div><img src="img/slot2.png" /></div>
+								<div><img src="img/slot3.png" /></div>
+								<div><img src="img/slot4.png" /></div>
+								<div><img src="img/slot5.png" /></div>
+								<div><img src="img/slot6.png" /></div>
+								<div><img src="img/slot7.png" /></div>
+								<div><img src="img/slot8.png" /></div>
+								<div><img src="img/slot9.png" /></div>
+								<div><img src="img/slot10.png" /></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-1">
+						<div>
+							<div id="machine10" class="randomizeMachine">
+								<div><img src="img/slot1.png" /></div>
+								<div><img src="img/slot2.png" /></div>
+								<div><img src="img/slot3.png" /></div>
+								<div><img src="img/slot4.png" /></div>
+								<div><img src="img/slot5.png" /></div>
+								<div><img src="img/slot6.png" /></div>
+								<div><img src="img/slot7.png" /></div>
+								<div><img src="img/slot8.png" /></div>
+								<div><img src="img/slot9.png" /></div>
+								<div><img src="img/slot10.png" /></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-1">
+						<div>
+							<div id="machine11" class="randomizeMachine" style="border-radius: 0px 22px 22px 0px;">
+								<div><img src="img/slot1.png" /></div>
+								<div><img src="img/slot2.png" /></div>
+								<div><img src="img/slot3.png" /></div>
+								<div><img src="img/slot4.png" /></div>
+								<div><img src="img/slot5.png" /></div>
+								<div><img src="img/slot6.png" /></div>
+								<div><img src="img/slot7.png" /></div>
+								<div><img src="img/slot8.png" /></div>
+								<div><img src="img/slot9.png" /></div>
+								<div><img src="img/slot10.png" /></div>
+							</div>
+						</div>
+					</div>-->
+				</div>
+				<div>
+					<div class="btn-group btn-group-justified btn-group-randomize" role="group">
+						<div id="ranomizeButton" type="button" class="btn btn-danger btn-lg">Shuffle</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$(document).ready(function(){
+				var machine1 = $("#machine1").slotMachine({
+					active	: 0,
+					delay	: 500
+				});
+
+				var machine2 = $("#machine2").slotMachine({
+					active	: 0,
+					delay	: 500,
+					direction: 'down'
+				});
+
+				var machine3 = $("#machine3").slotMachine({
+					active	: 0,
+					delay	: 500
+				});
+				
+				var machine4 = $("#machine4").slotMachine({
+					active	: 0,
+					delay	: 500
+				});
+				
+				var machine5 = $("#machine5").slotMachine({
+					active	: 0,
+					delay	: 500
+				});
+				
+				/*var machine6 = $("#machine6").slotMachine({
+					active	: 5,
+					delay	: 500
+				});
+				
+				var machine7 = $("#machine7").slotMachine({
+					active	: 6,
+					delay	: 500
+				});
+				
+				var machine8 = $("#machine8").slotMachine({
+					active	: 7,
+					delay	: 500
+				});
+				
+				var machine9 = $("#machine9").slotMachine({
+					active	: 8,
+					delay	: 500
+				});
+
+				var machine10 = $("#machine10").slotMachine({
+					active	: 9,
+					delay	: 500
+				});
+
+				var machine11 = $("#machine11").slotMachine({
+					active	: 10,
+					delay	: 500
+				});*/
+
+				function onComplete(active){
+					switch(this.element[0].id){
+						case 'machine1':
+							$("#machine1Result").text("Index: "+this.active);
+							break;
+						case 'machine2':
+							$("#machine2Result").text("Index: "+this.active);
+							break;
+						case 'machine3':
+							$("#machine3Result").text("Index: "+this.active);
+							break;
+						case 'machine4':
+							$("#machine4Result").text("Index: "+this.active);
+							break;
+						case 'machine5':
+							$("#machine5Result").text("Index: "+this.active);
+							break;
+						/*case 'machine6':
+							$("#machine6Result").text("Index: "+this.active);
+							break;
+						case 'machine7':
+							$("#machine7Result").text("Index: "+this.active);
+							break;
+						case 'machine8':
+							$("#machine8Result").text("Index: "+this.active);
+							break;
+						case 'machine9':
+							$("#machine9Result").text("Index: "+this.active);
+							break;
+						case 'machine10':
+							$("#machine8Result").text("Index: "+this.active);
+							break;
+						case 'machine11':
+							$("#machine9Result").text("Index: "+this.active);
+							break;*/
+					}
+				}
+
+				$("#ranomizeButton").click(function(){
+
+					machine1.shuffle(5, onComplete);
+					machine1.setRandomize(0);
+
+					setTimeout(function(){
+						machine2.shuffle(5, onComplete);
+					}, 500);
+					machine2.setRandomize(9);
+
+					setTimeout(function(){
+						machine3.shuffle(5, onComplete);
+					}, 1000);
+					machine3.setRandomize(0);
+					
+					setTimeout(function(){
+						machine4.shuffle(5, onComplete);
+					}, 1500);
+					machine4.setRandomize(8);
+					
+					setTimeout(function(){
+						machine5.shuffle(5, onComplete);
+					}, 2000);
+					machine5.setRandomize(3);
+					
+					/*setTimeout(function(){
+						machine6.shuffle(5, onComplete);
+					}, 2500);
+					machine6.setRandomize(1);
+					
+					setTimeout(function(){
+						machine7.shuffle(5, onComplete);
+					}, 3000);
+					machine7.setRandomize(5);
+					
+					setTimeout(function(){
+						machine8.shuffle(5, onComplete);
+					}, 3500);
+					machine8.setRandomize(5);
+					
+					setTimeout(function(){
+						machine9.shuffle(5, onComplete);
+					}, 4000);
+					machine9.setRandomize(3);
+
+					setTimeout(function(){
+						machine10.shuffle(5, onComplete);
+					}, 4500);
+					machine10.setRandomize(6);
+
+					setTimeout(function(){
+						machine11.shuffle(5, onComplete);
+					}, 5000);
+					machine11.setRandomize(5);*/
+				})
+			});
+		</script>
+
+
+		<!-- Slot machine example -->
+		<div id="casino" style="padding-top:10px;padding-bottom:10px;text-align: center;font-size: 16px">
+			Developed by: INCTRG - Mandaue
+		</div>
+		<script>
+			$(document).ready(function(){
+				var machine4 = $("#casino1").slotMachine({
+					active	: 0,
+					delay	: 500
+				});
+			});
+		</script>
+	</body>
+</html>
